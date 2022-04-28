@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from math import *
 import matplotlib.pyplot as plt
 import funciones
@@ -50,14 +51,21 @@ class csv:
             mediana = caracteristica[rangoNuevo]
 
         return mediana
+        
 
 
+pkmns_mas_media = []
+pkmns_menos_media = []
 
-print(csv.mediaAritmetica(funciones.Pokemon.get_pv()))
-print(csv.mediana(funciones.Pokemon.get_pv()))
+media_pv = csv.mediaAritmetica(funciones.Pokemon.get_pv())
+mediana_pv = csv.mediana(funciones.Pokemon.get_pv())
 
-print(csv.mediaAritmetica(funciones.Pokemon.get_pa()))
-print(csv.mediana(funciones.Pokemon.get_pa()))
+media_pa = csv.mediaAritmetica(funciones.Pokemon.get_pa())
+mediana_pa= csv.mediana(funciones.Pokemon.get_pa())
 
-print(csv.mediaAritmetica(funciones.Pokemon.get_pd()))
-print(csv.mediana(funciones.Pokemon.get_pd()))
+media_pd = csv.mediaAritmetica(funciones.Pokemon.get_pd())
+mediana_pd = csv.mediana(funciones.Pokemon.get_pd())
+
+valor_medio = (media_pa + media_pd + media_pv)/3
+valor_medio_pokemon = (funciones.Pokemon.get_pa() + funciones.Pokemon.get_pd() + funciones.Pokemon.get_pv())/3
+
