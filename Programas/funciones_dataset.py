@@ -51,3 +51,13 @@ class csv:
 
         return mediana
 
+
+
+print(csv.mediaAritmetica(funciones.Pokemon.get_pv()))
+print(csv.mediana(funciones.Pokemon.get_pv()))
+
+print(csv.mediaAritmetica(funciones.Pokemon.get_pa()))
+print(csv.mediana(funciones.Pokemon.get_pa()))
+
+print(csv.mediaAritmetica(funciones.Pokemon.get_pd()))
+print(csv.mediana(funciones.Pokemon.get_pd()))
