@@ -5,3 +5,10 @@ print(df)
 
 df.drop('Type 1')
 print(df)
+
+df.drop('Type 2')
+df.drop('Sp. Atk')
+df.drop('Sp. Def')
+df.drop('Speed')
+df.drop('Generation')
+df.drop('Legendary')
