@@ -19,7 +19,7 @@ class rango_excepcion(BaseException):
 
 
 class Pokemon:
-    def __init__(self, id, nombre, arma, pv, pa, pd):
+    def __init__(self, id, nombre, tipo1, tipo2, total, HP, Attack, Defense, SpAtk, SpDef, Speed, Generation, Legendary):
         self.id = id
         self.nombre = nombre
         self.arma = arma
