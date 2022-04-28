@@ -84,5 +84,5 @@ pokemon_en2.append(pkmns_mas_media[len(pkmns_mas_media):])
 pokemon_en1.append(pkmns_menos_media[:len(pkmns_menos_media)])
 pokemon_en2.append(pkmns_menos_media[len(pkmns_menos_media):])
 
-np.savetxt("Entrenador 1", pokemon_en1, delimeter = ",", fmt ='% s')
-np.savetxt("Entrenador 2", pokemon_en2, delimeter = ",", fmt = '% s')
+np.savetxt("Entrenador 1.csv", pokemon_en1, delimeter = ",", fmt ='% s')
+np.savetxt("Entrenador 2.csv", pokemon_en2, delimeter = ",", fmt = '% s')

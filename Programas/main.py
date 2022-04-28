@@ -11,8 +11,8 @@ if __name__ == '__main__':
     print(funciones.Pokemon.ataque(Eevee, Charmander))'''
 
     #Creacion pokemones csv:
-    lista_1 = funciones.sacar_pokemon('coach_1_pokemons.csv', funciones.pokemons_1)
-    lista_2 = funciones.sacar_pokemon('coach_2_pokemons.csv', funciones.pokemons_2)
+    lista_1 = funciones.sacar_pokemon('Entrenador 1.csv', funciones.pokemons_1)
+    lista_2 = funciones.sacar_pokemon('Entrenador 2.csv', funciones.pokemons_2)
 
 
 
