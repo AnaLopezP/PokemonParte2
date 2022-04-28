@@ -80,3 +80,6 @@ pokemon_en1 = []
 pokemon_en2 = []
 pokemon_en1.append(pkmns_mas_media[:len(pkmns_mas_media)])
 pokemon_en2.append(pkmns_mas_media[len(pkmns_mas_media):])
+
+pokemon_en1.append(pkmns_menos_media[:len(pkmns_menos_media)])
+pokemon_en2.append(pkmns_menos_media[len(pkmns_menos_media):])
