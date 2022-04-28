@@ -180,7 +180,7 @@ def sacar_pokemon(archivo, lista):
             lista.append(i)
         print(lista)
             
-def elegir_equipo():
+def elegir_equipo(lista):
     print("¿De todos tus pokemons, elija 3 para luchar,introduciendo su numero en la lista:")
     respuesta1 = int(input())
     respuesta2 = int(input())
