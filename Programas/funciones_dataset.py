@@ -73,5 +73,10 @@ for i in funciones.lista_id:
 
     if valor_medio_pokemon >= valor_medio:
         pkmns_mas_media.append(funciones.Pokemon.get_nombre())
+    else:
+        pkmns_menos_media.append(funciones.Pokemon.get_nombre())
 
-
+pokemon_en1 = []
+pokemon_en2 = []
+pokemon_en1.append(pkmns_mas_media[:len(pkmns_mas_media)])
+pokemon_en2.append(pkmns_mas_media[len(pkmns_mas_media):])
