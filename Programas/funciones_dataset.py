@@ -67,5 +67,11 @@ media_pd = csv.mediaAritmetica(funciones.Pokemon.get_pd())
 mediana_pd = csv.mediana(funciones.Pokemon.get_pd())
 
 valor_medio = (media_pa + media_pd + media_pv)/3
-valor_medio_pokemon = (funciones.Pokemon.get_pa() + funciones.Pokemon.get_pd() + funciones.Pokemon.get_pv())/3
+
+for i in funciones.lista_id:
+    valor_medio_pokemon = (funciones.Pokemon.get_pa() + funciones.Pokemon.get_pd() + funciones.Pokemon.get_pv())/3
+
+    if valor_medio_pokemon >= valor_medio:
+        pkmns_mas_media.append(funciones.Pokemon.get_nombre())
+
 
