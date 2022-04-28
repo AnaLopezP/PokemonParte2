@@ -1,5 +1,6 @@
 import random
 import csv
+import funciones_dataset
 
 lista_id = []
 pokemons_2 = []
@@ -19,7 +20,7 @@ class rango_excepcion(BaseException):
 
 
 class Pokemon:
-    def __init__(self, id, nombre, arma, tipo1, tipo2, total, pv, pa, pd, SpAtk, SpDef, Speed, Generation, Legendary):
+    def __init__(self, id, nombre, arma, pv, pa, pd,):
         self.id = id
         self.nombre = nombre
         self.arma = arma
@@ -179,6 +180,14 @@ def sacar_pokemon(archivo, lista):
             lista.append(i)
         print(lista)
             
+def elegir_equipo():
+    print("¿De todos tus pokemons, elija 3 para luchar,introduciendo su numero en la lista:")
+    respuesta1 = int(input())
+    respuesta2 = int(input())
+    respuesta3 = int(input())
+    equipo = [respuesta1, respuesta2, respuesta3]
+    return equipo
+
 def get_pokemon_de_lista(lista, entrenador):
     print("¿Que pokemon quieres sacar a luchar? Elija 0, 1, 2")
     respuesta = int(input())
