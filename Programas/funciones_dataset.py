@@ -28,4 +28,26 @@ class csv:
         media = sumaValores/n
         return media
     
-   
+    def mediana(self):
+        caracteristica = self.caracteristica.sort_values()  
+        caracteristica = caracteristica.reset_index()
+        n = self.caracteristica.count()
+        par = False
+        if n%2 == 0:
+            par =True
+        
+        if par == True:
+            rango = (n / 2)
+            print("RANGO = "+str(rango))
+            rangoNuevo = rango-1
+            valor1 = caracteristica[rangoNuevo]
+            valor2 = caracteristica[rangoNuevo+1]
+            mediana = valor1 +((valor2-valor1)/2)
+        
+        else: 
+            rango = (n+1)/2
+            rangoNuevo = rango - 1
+            mediana = caracteristica[rangoNuevo]
+
+        return mediana
+
